@@ -1,0 +1,66 @@
+{
+	"additionalFeatures": "Accessibility features:,
+	"android":{
+		"os": "Android 4.4",
+		"ui": "LG Home"
+	}
+	"availability":[],
+	"battery": {
+		"standbyTime": "790 hrs",
+		"talkTime": "16 hrs 30 mins",
+		"type":"Lithium Ion (Li-Ion) (3000 mAH)"
+	}
+	"camera": {
+		"features": [
+			"Flash",
+			"Video"
+		],
+		"primary": "13 megapixels"
+	},
+	"connectivity": {
+		"bluetooth": Bluetooth ",
+		"cell": "",
+		"gps": true,
+		"infrared": false,
+		"wifi": "802.11 b/g/n"
+	},
+	"description":"",
+	"display": {
+		"screenResolution": "",
+		"screenSize": "",
+		"touchScreen": true
+	},
+	"hardware": {
+		"accelerometer": true,
+		"audioJack: "",
+		"cpu": "Qualcom Snapdragon 800 2.26 GHz Quadcore",
+		"fmRadio": true,
+		"physicalKeyboard": false,
+		"usb": "USB2.0"
+	},
+	"id": "lg-g2",
+	"images": [
+		"img/phones/lg-g2.0.png",
+		"img/phones/lg-g2.1.png",
+		"img/phones/lg-g2.2.png",
+		"img/phones/lg-g2.3.png",
+		"img/phones/lg-g2.4.png",
+		"img/phones/lg-g2.5.png"
+	],
+	"name": "LG G2",
+	"sizeAndWeight": {
+		"dimensions": [
+			"138.5 mm (w)",
+			"7
+		],
+		"weight": "",
+	},
+	"storage": {
+		"ram": "32 GB"
+	}
+}
+		
+		
+	
+	
+	
