@@ -10,18 +10,16 @@
 </head>
 <body ng-controller="PhoneListCtrl">
 
-  <div class="container-fluid">
+  <div class="container-fluid" $scope.phones = data.splice(0, 5);>
     <div class="row">
       <div class="col-md-2">
         <!--Sidebar content-->
 
         Search: <input ng-model="query">
         Sort by:
-        <!--<select ng-model="orderProp">-->
-		<p>{{orderProp}} </p>
+        <select ng-model="orderProp">
           <option value="name">Alphabetical</option>
           <option value="age">Newest</option>
-		  <option value="-age">OLDEST</option>
         </select>
 
       </div>
@@ -38,6 +36,6 @@
       </div>
     </div>
   </div>
-
+<pre>{{phones | json}}</pre> 
 </body>
 </html>
