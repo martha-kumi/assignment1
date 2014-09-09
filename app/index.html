@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="phonecatApp" ng-controller="PhoneListCtrl">
+<html lang="en" ng-app="phonecatApp">
 <head>
   <meta charset="utf-8">
   <title>Google Phone Gallery</title>
@@ -8,7 +8,7 @@
   <script src="bower_components/angular/angular.js"></script>
   <script src="js/controllers.js"></script>
 </head>
-<body > 
+<body ng-controller="PhoneListCtrl">
 
   <div class="container-fluid">
     <div class="row">
@@ -16,16 +16,21 @@
         <!--Sidebar content-->
 
         Search: <input ng-model="query">
-		
-		<p>{{query}}</p>
+        Sort by:
+        <!--<select ng-model="orderProp">-->
+		<p>{{orderProp}} </p>
+          <option value="name">Alphabetical</option>
+          <option value="age">Newest</option>
+		  <option value="-age">OLDEST</option>
+        </select>
 
       </div>
       <div class="col-md-10">
         <!--Body content-->
 
         <ul class="phones">
-          <li ng-repeat="phone in phones | filter:query">
-            {{phone.name}}
+          <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+            <span>{{phone.name}}</span>
             <p>{{phone.snippet}}</p>
           </li>
         </ul>
@@ -34,6 +39,5 @@
     </div>
   </div>
 
-   
 </body>
 </html>
